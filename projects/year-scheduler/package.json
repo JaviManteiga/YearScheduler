@@ -1,0 +1,33 @@
+
+{
+  "name": "year-scheduler",
+  "version": "2.1.4",
+  "description": "An Angular Year Scheduler component.",
+  "author": "Javier Manteiga",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaviManteiga/YearScheduler"
+  },
+  "keywords": [
+    "angular",
+    "scheduler",
+    "component",
+    "angular-scheduler",
+    "momentjs",
+    "typescript",
+    "javascript",
+    "calendar",
+	"year"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "@angular/animations": "~7.2.0",
+    "moment": "^2.24.0",
+    "angular2-draggable": "^2.2.1"
+  }
+}
+
+
+

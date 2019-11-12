@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { AxiomSchedulerEvent } from 'axiom-scheduler';
+import { AxiomSchedulerEvent } from 'year-scheduler';
 import * as moment from 'moment';
 
 @Component({

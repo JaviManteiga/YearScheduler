@@ -1,6 +1,6 @@
 import { Component, OnInit, Injector, ViewChild } from '@angular/core';
 import { RouteBaseClass } from '../route.base';
-import { AxiomSchedulerComponent } from 'axiom-scheduler';
+import { AxiomSchedulerComponent } from 'year-scheduler';
 
 @Component({
   selector: 'app-theme',

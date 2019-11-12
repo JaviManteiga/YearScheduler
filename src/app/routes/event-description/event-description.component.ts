@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SAMPLE_EVENTS } from 'src/app/sample-events';
-import { AxiomSchedulerEvent, AxiomSchedulerView } from 'axiom-scheduler';
+import { AxiomSchedulerEvent, AxiomSchedulerView } from 'year-scheduler';
 import { NotifierService } from 'angular-notifier';
 
 @Component({

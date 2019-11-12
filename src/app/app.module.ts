@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AxiomSchedulerModule } from 'axiom-scheduler';
+import { AxiomSchedulerModule } from 'year-scheduler';
 import { NgbModule, NgbDateAdapter, NgbTimeAdapter } from '@ng-bootstrap/ng-bootstrap';
 import { NotifierModule } from 'angular-notifier';
 import { ColorPickerModule } from 'ngx-color-picker';

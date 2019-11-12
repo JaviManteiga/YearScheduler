@@ -1,0 +1,30 @@
+
+
+<div class="ax-scheduler__year-view__month__header">
+   {{ monthObject.month.format('MMMM') }}
+</div>
+<div class="ax-scheduler__year-view__content">
+    <div class="ax-scheduler__year-view__content_weekNumbers">
+        <div *ngFor="let dayLetter of monthObject.montWeeks">
+            <span>
+                {{dayLetter}}
+            </span>    
+        </div>
+    </div>
+    <div class="ax-scheduler__year-view__month__body">
+        <div class="ax-scheduler__year-header" *ngFor="let dayLetter of monthObject.weekDays">
+            <span class="ax-scheduler__year-view__header__day">
+                {{dayLetter}}
+            </span>    
+        </div>
+        <div *ngFor="let day of monthObject.days" class="ax-scheduler__year-data" 
+                [ngClass]="{ 'today' : day.isSame(today,'days') , 'current' : day.isSame(monthObject.month,'months') }">
+            <span ax-scheduler-month-tile-day *ngIf="day.isSame(monthObject.month,'months')"
+            [axEventTemplate] = "axEventTemplate"
+            [axEventFormatter] = "axEventFormatter"
+            [axDragStep]="axDragStep"
+            [axStartDate]="axStartDate"
+            [day]="day"></span>
+        </div>
+    </div>
+</div>

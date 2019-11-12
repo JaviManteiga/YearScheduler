@@ -61,7 +61,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "axiom-ngx-scheduler:build"
+            "browserTarget": "axiom-ngx-scheduler:build",
+			"sourceMap": {
+				"scripts": true,
+				"styles": true,
+				"vendor": true
+			},
           },
           "configurations": {
             "production": {
@@ -169,33 +174,33 @@
         }
       }
     },
-    "axiom-scheduler": {
-      "root": "projects/axiom-scheduler",
-      "sourceRoot": "projects/axiom-scheduler/src",
+    "year-scheduler": {
+      "root": "projects/year-scheduler",
+      "sourceRoot": "projects/year-scheduler/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/axiom-scheduler/tsconfig.lib.json",
-            "project": "projects/axiom-scheduler/ng-package.json"
+            "tsConfig": "projects/year-scheduler/tsconfig.lib.json",
+            "project": "projects/year-scheduler/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/axiom-scheduler/src/test.ts",
-            "tsConfig": "projects/axiom-scheduler/tsconfig.spec.json",
-            "karmaConfig": "projects/axiom-scheduler/karma.conf.js"
+            "main": "projects/year-scheduler/src/test.ts",
+            "tsConfig": "projects/year-scheduler/tsconfig.spec.json",
+            "karmaConfig": "projects/year-scheduler/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/axiom-scheduler/tsconfig.lib.json",
-              "projects/axiom-scheduler/tsconfig.spec.json"
+              "projects/year-scheduler/tsconfig.lib.json",
+              "projects/year-scheduler/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

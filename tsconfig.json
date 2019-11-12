@@ -20,16 +20,16 @@
     ],
     "paths": {
       "axiom-toggle": [
-        "dist/axiom-scheduler"
+        "dist/year-scheduler"
       ],
       "axiom-toggle/*": [
-        "dist/axiom-scheduler/*"
+        "dist/year-scheduler/*"
       ],
-      "axiom-scheduler": [
-        "dist/axiom-scheduler"
+      "year-scheduler": [
+        "dist/year-scheduler"
       ],
-      "axiom-scheduler/*": [
-        "dist/axiom-scheduler/*"
+      "year-scheduler/*": [
+        "dist/year-scheduler/*"
       ]
     }
   }

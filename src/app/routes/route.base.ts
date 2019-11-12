@@ -2,7 +2,7 @@ import { SAMPLE_EVENTS } from 'src/app/sample-events';
 import { EventWindowComponent } from 'src/app/event-window/event-window.component';
 import { Injector } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { AxiomSchedulerEvent } from 'axiom-scheduler';
+import { AxiomSchedulerEvent } from 'year-scheduler';
 
 
 export class RouteBaseClass {

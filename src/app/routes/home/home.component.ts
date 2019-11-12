@@ -1,8 +1,8 @@
 
-import { AxiomSchedulerAnimation } from 'axiom-scheduler';
+import { AxiomSchedulerAnimation } from 'year-scheduler';
 
 import { Component, OnInit, ViewChild, Injector } from '@angular/core';
-import { AxiomSchedulerComponent } from 'axiom-scheduler';
+import { AxiomSchedulerComponent } from 'year-scheduler';
 import { RouteBaseClass } from '../route.base';
 
 @Component({

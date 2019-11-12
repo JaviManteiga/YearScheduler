@@ -11,4 +11,4 @@ export * from './lib/axiom-scheduler-year-view/axiom-scheduler-year-view.compone
 export * from './lib/services/axiom-scheduler-sidebar.service';
 export * from './lib/services/axiom-scheduler.service';
 export * from './lib/locales';
-export * from './lib/axiom-scheduler.module';
+export * from './lib/year-scheduler.module';

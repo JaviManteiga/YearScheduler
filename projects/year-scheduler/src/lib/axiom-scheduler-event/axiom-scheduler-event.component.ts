@@ -3,7 +3,6 @@ import { Component, OnInit, Input, ViewEncapsulation, Renderer2, ElementRef, Aft
 import { AxiomSchedulerEvent } from './../axiom-scheduler/axiom-scheduler.component';
 import * as momentNs from 'moment'; const moment = momentNs;
 import { trigger, style, transition, animate } from '@angular/animations';
-import { IResizeEvent } from 'angular2-draggable/lib/models/resize-event';
 
 @Component({
   selector: '[ax-scheduler-event]',
@@ -71,27 +70,6 @@ export class AxiomSchedulerEventComponent extends AxiomSchedulerComponentCommon 
     this.event.to = this.toTime.clone().toDate();
     this.toggleShowTime(false);
     this.service.eventChanged(this.event);
-  }
-
-  public toTimeChanging(e: IResizeEvent): void {
-    this.diff = e.size.height;
-    this.fromTime = this.fromTime.clone().startOf('day').add(this.getOffsetMinute(), 'minutes');
-    this.toTime = this.fromTime.clone().add(this.diff, 'minutes');
-  }
-
-  public toTimeChanged(e: IResizeEvent): void {
-    this.event.from = this.fromTime.clone().toDate();
-    this.event.to = this.toTime.clone().toDate();
-    this.toggleShowTime(false);
-    this.service.eventChanged(this.event);
-  }
-
-  public toTimeChangeStart(e: IResizeEvent): void {
-    this.toggleShowTime(true);
-  }
-
-  public fromTimeChangeStart(e: IResizeEvent): void {
-    this.toggleShowTime(true);
   }
 
   public deleteEevent(): void {

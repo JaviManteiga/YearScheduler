@@ -2,7 +2,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AngularDraggableModule } from 'angular2-draggable';
 
 import { AxiomSchedulerComponent } from './axiom-scheduler/axiom-scheduler.component';
 import { AxiomSchedulerEventComponent } from './axiom-scheduler-event/axiom-scheduler-event.component';
@@ -24,8 +23,7 @@ import { AxiomSchedulerSidebarComponent } from './axiom-scheduler-sidebar/axiom-
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    AngularDraggableModule
+    FormsModule
   ],
   exports: [
     AxiomSchedulerComponent,
@@ -37,4 +35,4 @@ import { AxiomSchedulerSidebarComponent } from './axiom-scheduler-sidebar/axiom-
     AxiomSchedulerSidebarComponent
   ]
 })
-export class AxiomSchedulerModule { }
+export class YearSchedulerModule { }

@@ -15,9 +15,9 @@ export class HomeComponent extends RouteBaseClass implements OnInit {
   public model: any = {};
   public themes = ['dark', 'light'];
   public animations = Object.values(AxiomSchedulerAnimation);
-  @ViewChild(AxiomSchedulerComponent) scheduler: AxiomSchedulerComponent;
+  @ViewChild(AxiomSchedulerComponent, { static: false }) scheduler: AxiomSchedulerComponent;
 
-  constructor(injector:Injector) { 
+  constructor(injector: Injector) {
     super(injector);
   }
 
@@ -30,7 +30,7 @@ export class HomeComponent extends RouteBaseClass implements OnInit {
     this.model.animation = AxiomSchedulerAnimation.Default;
   }
 
-  refreshView() : void{
+  refreshView(): void {
     this.scheduler.refreshScheduler();
   }
 

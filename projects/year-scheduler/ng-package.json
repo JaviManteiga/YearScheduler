@@ -4,8 +4,7 @@
   "lib": {
     "entryFile": "src/public_api.ts",
     "umdModuleIds": {
-      "moment": "moment",
-      "angular2-draggable" : "angular2-draggable"
+      "moment": "moment"
     }
   }
 }

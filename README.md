@@ -4,12 +4,10 @@ Axiom scheduler is an angular scheduler component use [Momentjs](https://momentj
 
 ##### Install component package from npm :
 
-`npm install axiom-scheduler moment angular2-draggable`
+`npm install axiom-scheduler moment`
 
 Axiom Scheduler also need to install `@angular/animations`.
 `(By default angular will install animation module when you create a new angular project using angular CLI)`
-
-For drag and resizing feature Axiom scheduler using [angular2-draggable](https://github.com/xieziyu/angular2-draggable), Thanks to [xieziyu](https://github.com/xieziyu) :blush:.
 
 ##### Import component module :
 

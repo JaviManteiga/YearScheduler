@@ -1,7 +1,7 @@
 
 {
   "name": "year-scheduler",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "An Angular Year Scheduler component.",
   "author": "Javier Manteiga",
   "repository": {

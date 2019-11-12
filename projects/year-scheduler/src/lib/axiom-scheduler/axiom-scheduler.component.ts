@@ -1,4 +1,5 @@
-import { Component, ElementRef, EventEmitter, Injector, Input, OnDestroy, OnInit, Output, Renderer2, TemplateRef, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Injector, Input, OnDestroy,
+  OnInit, Output, Renderer2, TemplateRef, ViewEncapsulation } from '@angular/core';
 import * as momentNs from 'moment';
 import { Subscription } from 'rxjs';
 import { AX_LOCALES } from './../locales';

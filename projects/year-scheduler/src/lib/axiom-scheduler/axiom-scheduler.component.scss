@@ -39,9 +39,9 @@
   }
 
   %nav-buttons {
-    border-radius: 5px;
     line-height: 26px;
-    border: 1px solid $border-color;
+    border: 0 solid $border-color;
+    border-width: 1px 0 1px 0;
     color: #333;
     transition: all 0.1s ease-in-out;
     text-transform: uppercase;
@@ -55,8 +55,9 @@
       box-shadow: none;
     }
     &:hover {
-      border-color: #aaa;
-    }
+      background: $selected-year-color;
+      opacity: .65;
+    } 
     &:active {
       background: #eee;
     }
@@ -93,46 +94,37 @@
     flex-direction: row;
     text-transform: uppercase;
     font-size: 12px;
-    padding-left: 30px;
     > div {
-      flex: 3;
+      flex: 5;
     }
-    .ax-scheduler__header__date-part {
-      text-align: left;
-      padding: 0 5px;
+    .ax-scheduler__header__date-part__nav {
       display: flex;
-      align-items: center;
-      padding-left: 20px;
-      .ax-scheduler__header__date-part__nav {
-        display: flex;
-        margin-left: 15px;
-        > button,
-        > div {
-          flex: 2;
-          border-left: 1px solid $border-color;
-          @extend %nav-buttons;
-          svg {
-            height: 20px;
-            vertical-align: middle;
-            display: block;
-          }
-          &:last-child {
-            border-radius: 0 5px 5px 0;
-            border-left: none;
-          }
-          &:first-child {
-            border-radius: 5px 0 0 5px;
-            border-right: none;
-          }
-        }
-        > div {
-          border: 1px solid $border-color;
-          border-radius: 0;
-        }
-      }
       > button {
         @extend %nav-buttons;
+        border-width: 1px 0 1px 0;
+        flex: 0;
+        svg {
+          height: 20px;
+          display: block;
+        }
+        &:first-child {
+          border-width: 1px 0 1px 1px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &:last-child {
+          border-width: 1px 1px 1px 0;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
       }
+      > div {
+        @extend %nav-buttons;
+        flex: 1;
+      }
+    }
+    > button {
+      @extend %nav-buttons;
     }
     .ax-scheduler__header__date-part__title {
       text-align: center;
@@ -141,6 +133,10 @@
       padding: 0 8px;
       min-width: 130px;
       cursor: default !important;
+      &.selected {
+        background: $selected-year-color;
+        color: white;
+      }
     }
     .ax-scheduler__header__view-part {
       text-align: left;

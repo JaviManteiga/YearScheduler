@@ -150,13 +150,8 @@ export class AxiomSchedulerComponent extends AxiomSchedulerComponentCommon imple
     this.service.axEvents = this.axEvents;
   }
 
-  public prev(): void {
-    this.step(-1);
-    this.service.refreshDate(this.date);
-  }
-
-  public next(): void {
-    this.step(1);
+  public changeYear(step: number): void {
+    this.step(step);
     this.service.refreshDate(this.date);
   }
 
@@ -185,8 +180,7 @@ export class AxiomSchedulerComponent extends AxiomSchedulerComponentCommon imple
         Object.values(AxiomSchedulerAnimation).forEach((animation) => {
           this._renderer.removeClass(this._element.nativeElement, animation);
         });
-      }
-      else {
+      } else {
         Object.values(AxiomSchedulerAnimation).forEach((animation) => {
           this._renderer.removeClass(this._element.nativeElement, animation);
         });
@@ -216,8 +210,7 @@ export class AxiomSchedulerComponent extends AxiomSchedulerComponentCommon imple
       this._renderer.removeClass(this._element.nativeElement, 'backward');
       if (step > 0) {
         this._renderer.addClass(this._element.nativeElement, 'forward');
-      }
-      else {
+      } else {
         this._renderer.addClass(this._element.nativeElement, 'backward');
       }
     }

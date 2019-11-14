@@ -123,15 +123,11 @@
         flex: 1;
       }
     }
-    > button {
-      @extend %nav-buttons;
-    }
     .ax-scheduler__header__date-part__title {
       text-align: center;
       color: $main-font-color;
       white-space: nowrap;
       padding: 0 8px;
-      min-width: 130px;
       cursor: default !important;
       &.selected {
         background: $selected-year-color;
